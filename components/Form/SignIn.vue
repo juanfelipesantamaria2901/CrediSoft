@@ -3,16 +3,12 @@
     <v-flex lg6>
       <v-row no-gutters>
         <v-container fluid class="pb-12">
-          <h1 class="text-center">Sign in to your Nuxtify account</h1>
-          <v-col cols="12" class="text-center">
-            to enjoy all of our cool
-            <a class="primary--text">features</a> ✌️
-          </v-col>
+          <h1 class="text-center">Ingresa a tu Cuenta Finsea administrador</h1>
         </v-container>
       </v-row>
       <v-col>
         <v-card elevation="2" light class="bg-wave">
-          <v-card-title> Login to Your Account </v-card-title>
+          <v-card-title> Ingresa a tu cuenta </v-card-title>
           <v-form v-model="valid" name="form-login" @submit="onSubmit()">
             <v-container>
               <v-row class="text-left">
@@ -36,10 +32,10 @@
                   ></v-text-field>
                 </v-col>
                 <v-col cols="12" md="6">
-                  <v-btn type="submit" color="primary">Login</v-btn>
+                  <v-btn type="submit" color="primary">Ingresar</v-btn>
                 </v-col>
                 <v-col cols="12" md="6" class="text-right">
-                  <nuxt-link to="/forgot-password">Forgot Password</nuxt-link>
+                  <nuxt-link to="/forgot-password">Contraseña extraviada</nuxt-link>
                   or
                   <nuxt-link to="/">Back</nuxt-link>
                 </v-col>

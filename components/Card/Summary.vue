@@ -35,30 +35,30 @@ export default {
     return {
       items: [
         {
-          title: 'Users Summary',
+          title: 'Solocitantes',
           summary: '5230',
-          total: '+23% Up',
+          total: '+23% Más',
           color: 'green',
           icon: 'mdi-account-box-outline'
         },
         {
-          title: 'Sales Summary',
+          title: 'Creditos Aprobados',
           summary: '6424',
-          total: '-3% Down',
+          total: '-3% Menos',
           color: 'warning',
           icon: 'mdi-cart-plus'
         },
         {
-          title: 'Stock Summary',
+          title: 'Creditos Rechazados',
           summary: '3920',
-          total: '-10% Down',
+          total: '-10% Menos',
           color: 'red',
           icon: 'mdi-chart-areaspline'
         },
         {
-          title: 'Views Summary',
+          title: 'Creditos Finalizados',
           summary: '4124',
-          total: '+50% Up',
+          total: '+50% Más',
           color: 'orange',
           icon: 'mdi-gesture-double-tap'
         }

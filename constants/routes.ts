@@ -9,7 +9,7 @@ const AUTH = {
     route: '/sign-up',
     url: '/sign-up'
   },
-  FORGOTPASSWORD: {
+  ContraseñaPerdida: {
     href: '/auth/forgotPassword.vue',
     route: '/forgot-password',
     url: '/forgot-password'
@@ -17,37 +17,37 @@ const AUTH = {
 }
 
 const DASHBOARD = {
-  HOME: {
+  Home: {
     href: '/index.vue',
     route: '/',
     url: '/'
   },
-  FORM: {
+  Formulario: {
     href: '/forms.vue',
     route: '/forms',
     url: '/forms'
   },
-  TABLE: {
+  Tablas: {
     href: '/tables.vue',
     route: '/tables',
     url: '/tables'
   },
-  FILTERS: {
+  Filtros: {
     href: '/filters.vue',
     route: '/filters',
     url: '/filters'
   },
-  CHART: {
+  Graficos: {
     href: '/charts.vue',
     route: '/charts',
     url: '/charts'
   },
-  PROFILE: {
+  Perfil: {
     href: '/profile.vue',
     route: '/user-profile',
     url: '/profile'
   },
-  SETTING: {
+  Ajustes: {
     href: '/settings.vue',
     route: '/user-settings',
     url: '/setting'

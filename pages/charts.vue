@@ -2,19 +2,19 @@
   <v-container fluid>
     <v-row>
       <v-col cols="12" md="12">
-        <h1 class="title-page text-center">Charts</h1>
+        <h1 class="title-page text-center">Graficos</h1>
         <v-row class="text-left">
           <v-col col="12" md="12">
             <v-row>
               <v-col cols="12" md="6">
                 <v-card height="100%" class="card">
-                  <v-card-title tag="h2">Views Chart </v-card-title>
-                  <v-card-subtitle>Data examples</v-card-subtitle>
+                  <v-card-title tag="h2">Solicitudes en el ultimo año</v-card-title>
+                  <v-card-subtitle>Medicion en miles</v-card-subtitle>
                   <v-card-text>
                     <div>
                       <client-only
                         v-if="lineDataViews"
-                        placeholder="Loading..."
+                        placeholder="Cargando..."
                       >
                         <LineChart
                           :chart-options="barChartOptions"
@@ -40,13 +40,13 @@
               </v-col>
               <v-col cols="12" md="6">
                 <v-card height="100%" class="card">
-                  <v-card-title tag="h2">Sales Chart</v-card-title>
-                  <v-card-subtitle>Data examples</v-card-subtitle>
+                  <v-card-title tag="h2">Montos de prestamo total</v-card-title>
+                  <v-card-subtitle>Ultmimos meses</v-card-subtitle>
                   <v-card-text>
                     <div>
                       <client-only
                         v-if="lineDataSales"
-                        placeholder="Loading..."
+                        placeholder="Cargando..."
                       >
                         <LineChart
                           :chart-options="barChartOptions"
@@ -74,10 +74,10 @@
           </v-col>
           <v-col cols="12" md="12">
             <v-row>
-              <v-col cols="12" md="6">
-                <v-card height="100%" class="card">
-                  <v-card-title tag="h2">Bar Chart</v-card-title>
-                  <v-card-subtitle>Data Projects</v-card-subtitle>
+              <!-- <v-col cols="12" md="6"> -->
+                <!-- <v-card height="100%" class="card">
+                  <v-card-title tag="h2">Tipo de creditos</v-card-title>
+                  <v-card-subtitle>Creditos mas solicitados</v-card-subtitle>
                   <v-card-text>
                     <div>
                       <client-only
@@ -94,19 +94,19 @@
                     </div>
                   </v-card-text>
                 </v-card>
-              </v-col>
+              </v-col> -->
               <v-col cols="12" md="6">
                 <v-card height="100%" class="card">
-                  <v-card-title tag="h2">Pie Chart</v-card-title>
-                  <v-card-subtitle>Data examples</v-card-subtitle>
+                  <v-card-title tag="h2">Cantidad de credito por año</v-card-title>
+                  <v-card-subtitle>En miles</v-card-subtitle>
                   <v-card-text>
                     <div>
-                      <client-only v-if="barChartData" placeholder="Loading...">
+                      <client-only v-if="barChartData" placeholder="Cargando...">
                         <PieChart
                           :chartData="barChartData"
                           :options="[
                             {
-                              hoverOffset: 4,
+                              hoverOffset: 40,
                               rotation: 90,
                               cutout: 10,
                               hoverOffset: 30,
@@ -123,7 +123,7 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col md="12">
+          <!-- <v-col md="12">
             <v-row>
               <v-col cols="12" lg="6">
                 <v-card height="100%" class="card">
@@ -195,7 +195,7 @@
                     <v-col cols="12" md="12">
                       <client-only
                         v-if="barChannelData"
-                        placeholder="Loading..."
+                        placeholder="Cargando..."
                       >
                         <DoughnutChart
                           :chartData="barChannelData"
@@ -219,7 +219,7 @@
                 </v-card>
               </v-col>
             </v-row>
-          </v-col>
+          </v-col> -->
         </v-row>
       </v-col>
     </v-row>
@@ -393,8 +393,8 @@ export default {
   },
   head() {
     return {
-      title: 'Charts Page - Nuxtify',
-      description: ' A Collection of Charts in Nuxtify Admin Template Dashboard'
+      title: 'Charts Page - CrediSoft',
+      description: ' A Collection of Charts in CrediSoft Dashboard'
     }
   },
   computed: {

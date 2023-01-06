@@ -1,9 +1,9 @@
 <template>
   <v-row>
     <v-col class="text-center">
-      <h1 class="title-page">Tables</h1>
+      <h1 class="title-page">Tablas</h1>
       <v-col class="text-left">
-        <h2 class="title-page-sub">Data Table</h2>
+        <h2 class="title-page-sub">Tablas de datos con solicitudes credito Hogar</h2>
         <v-data-table
           :headers="headers"
           :items="desserts"
@@ -15,38 +15,38 @@
       <v-container fluid>
         <v-row>
           <v-col cols="12" md="6" align="left">
-            <h2 class="title-page-sub">Simple Table Dark</h2>
+            <h2 class="title-page-sub">Solicitudes Poliza Autos</h2>
             <v-simple-table>
               <template v-slot:default>
                 <thead>
                   <tr>
                     <th class="text-left">Name</th>
-                    <th class="text-left">Calories</th>
+                    <th class="text-left">Monto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="item in desserts" :key="item.name">
                     <td>{{ item.name }}</td>
-                    <td>{{ item.calories }}</td>
+                    <td>{{ item.monto }}</td>
                   </tr>
                 </tbody>
               </template>
             </v-simple-table>
           </v-col>
           <v-col cols="12" md="6" align="left">
-            <h2 class="title-page-sub">Simple Table Light</h2>
+            <h2 class="title-page-sub">Solicitudes Credito</h2>
             <v-simple-table light>
               <template v-slot:default>
                 <thead>
                   <tr>
                     <th class="text-left">Name</th>
-                    <th class="text-left">Calories</th>
+                    <th class="text-left">Monto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="item in desserts" :key="item.name">
                     <td>{{ item.name }}</td>
-                    <td>{{ item.calories }}</td>
+                    <td>{{ item.monto }}</td>
                   </tr>
                 </tbody>
               </template>
@@ -55,15 +55,15 @@
         </v-row>
       </v-container>
       <v-col class="text-left">
-        <h2 class="title-page-sub">Data Table Search</h2>
-        <v-card light>
+        <h2 class="title-page-sub">Tabla de Datos solicitudes Credito Vida</h2>
+        <v-card>
           <v-card-title>
-            Nutrition Search
+            Filtrar
             <v-spacer></v-spacer>
             <v-text-field
               v-model="search"
               append-icon="mdi-magnify"
-              label="Search"
+              label="Buscar"
               single-line
               hide-details
             ></v-text-field>
@@ -72,18 +72,10 @@
             :headers="headers"
             :items="desserts"
             :search="search"
-            light
+            dark
           ></v-data-table>
         </v-card>
       </v-col>
-      <blockquote class="blockquote">
-        &#8220;First, solve the problem. Then, write the code.&#8221;
-        <footer>
-          <small>
-            <em>&mdash;John Johnson</em>
-          </small>
-        </footer>
-      </blockquote>
     </v-col>
   </v-row>
 </template>
@@ -96,77 +88,77 @@ export default {
       search: '',
       headers: [
         {
-          text: 'Dessert (100g serving)',
+          text: 'Nombre solicitante',
           align: 'start',
           sortable: false,
           value: 'name'
         },
-        { text: 'Calories', value: 'calories' },
-        { text: 'Fat (g)', value: 'fat' },
-        { text: 'Carbs (g)', value: 'carbs' },
-        { text: 'Protein (g)', value: 'protein' },
-        { text: 'Iron (%)', value: 'iron' }
+        { text: 'Monto', value: 'monto' },
+        { text: 'Puntaje Crediticio', value: 'fat' },
+        { text: 'Numero de Pagos', value: 'carbs' },
+        { text: 'Veces en mora', value: 'protein' },
+        { text: 'Progreso de Credito', value: 'iron' }
       ],
       desserts: [
         {
-          name: 'Frozen Yogurt',
-          calories: 159,
+          name: 'Grace Smiht',
+          monto: 159,
           fat: 6.0,
           carbs: 24,
           protein: 4.0,
           iron: '1%'
         },
         {
-          name: 'Ice cream sandwich',
-          calories: 237,
+          name: 'Abruee Mckoquick',
+          monto: 237,
           fat: 9.0,
           carbs: 37,
           protein: 4.3,
           iron: '1%'
         },
         {
-          name: 'Eclair',
-          calories: 262,
+          name: 'Eclair Richards',
+          monto: 262,
           fat: 16.0,
           carbs: 23,
           protein: 6.0,
           iron: '7%'
         },
         {
-          name: 'Cupcake',
-          calories: 305,
+          name: 'Artur Morgan',
+          monto: 305,
           fat: 3.7,
           carbs: 67,
           protein: 4.3,
           iron: '8%'
         },
         {
-          name: 'Gingerbread',
-          calories: 356,
+          name: 'John Marston',
+          monto: 356,
           fat: 16.0,
           carbs: 49,
           protein: 3.9,
           iron: '16%'
         },
         {
-          name: 'Jelly bean',
-          calories: 375,
+          name: 'Jack Martin',
+          monto: 375,
           fat: 0.0,
           carbs: 94,
           protein: 0.0,
           iron: '0%'
         },
         {
-          name: 'Lollipop',
-          calories: 392,
+          name: 'Cristian Gutiérrez',
+          monto: 392,
           fat: 0.2,
           carbs: 98,
           protein: 0,
           iron: '2%'
         },
         {
-          name: 'Honeycomb',
-          calories: 408,
+          name: 'Elizabeth Olsten',
+          monto: 408,
           fat: 3.2,
           carbs: 87,
           protein: 6.5,
@@ -174,15 +166,15 @@ export default {
         },
         {
           name: 'Donut',
-          calories: 452,
+          monto: 452,
           fat: 25.0,
           carbs: 51,
           protein: 4.9,
           iron: '22%'
         },
         {
-          name: 'KitKat',
-          calories: 518,
+          name: 'Jame Morgan',
+          monto: 518,
           fat: 26.0,
           carbs: 65,
           protein: 7,

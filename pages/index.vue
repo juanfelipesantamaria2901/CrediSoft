@@ -2,16 +2,17 @@
   <v-container fluid>
     <v-row>
       <v-col cols="12" md="12">
-        <h1 class="title-page">Hi, Welcome to Nuxtify</h1>
+        <h1 class="title-page">Hola Bienvenido a CrediSoft</h1>
         <CardSummary />
         <v-row>
           <v-col cols="12" lg="4">
             <v-card height="100%">
-              <v-card-title>Sales by brand</v-card-title>
+              <v-card-title>Creditos solicitados</v-card-title>
               <v-card-text>
                 <p>
-                  Our daily corporate brand sales summaries in wholesale. This
-                  summary is active from 00.00 to 24.00 monthly.
+                  Grafico de solicitudes por tipo de credito en el mes actual
+                  se representa con cantidades de solicitantes y creditos aprobados,
+                  los creditos rechazados no son tomados en cuenta
                 </p>
                 <client-only placeholder="Loading...">
                   <DoughnutChart
@@ -23,14 +24,13 @@
                 <v-row>
                   <v-col cols="9">
                     <p>
-                      The sales summary is done by our company on salesperson
-                      activities based on the brand they sell daily on a monthly
-                      basis.
+                      Si busca un acercamiento sobre todos los creditos del año puede ver una historico y tambien
+                      realizar sus propios analisis con métricas establecidas por la compañia
                     </p></v-col
                   >
                   <v-col cols="3">
                     <v-btn type="submit" color="primary" small tile
-                      >See all</v-btn
+                      >Ver Más</v-btn
                     ></v-col
                   ></v-row
                 >
@@ -39,13 +39,13 @@
           </v-col>
           <v-col cols="12" lg="8">
             <v-card height="100%" light>
-              <v-card-title>Person sales by month</v-card-title>
+              <v-card-title>Ciudades donde mas creditos se solicitaron</v-card-title>
               <v-card-text>
                 <p>
-                  The sales summary is done by our company on salesperson
-                  activities based on the brand they sell daily on a monthly
-                  basis. These are the top three sales by a person on average
-                  above 5 sales monthly.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  nihil corporis rem iste! Doloribus magni doloremque inventore
+                  natus consectetur corporis debitis nemo numquam explicabo esse
+                  iusto maxime.
                 </p>
                 <client-only placeholder="Loading...">
                   <LineChart
@@ -62,9 +62,10 @@
                   />
                 </client-only>
                 <p>
-                  The performance of the sales summary will start from the start
-                  of the year to the end year and will impact the person's
-                  yearly performance review, and bonus rewards.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  nihil corporis rem iste! Doloribus magni doloremque inventore
+                  natus consectetur corporis debitis nemo numquam explicabo esse
+                  iusto maxime.
                 </p>
               </v-card-text>
             </v-card>
@@ -75,7 +76,7 @@
             <v-card height="100%" class="card">
               <v-container fluid>
                 <h3 class="title-page">
-                  Company official yearly calendar release
+                  Calendario de cierres, inicios y actividades
                 </h3>
                 <div>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -90,11 +91,12 @@
           <v-col cols="12" md="4">
             <v-card height="100%" class="card">
               <v-container>
-                <h3 class="title-page">Company News Announcement</h3>
+                <h3 class="title-page">Notificaciones</h3>
                 <div>
-                  Here are the latest announcement notifications across our
-                  company! So you do not have to fear missing out on the latest
-                  news
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                  nihil corporis rem iste! Doloribus magni doloremque inventore
+                  natus consectetur corporis debitis nemo numquam explicabo esse
+                  iusto maxime.
                 </div>
                 <v-container fluid>
                   <v-row no-gutters>
@@ -106,11 +108,10 @@
                     <v-col cols="10">
                       <blockquote class="blockquote grey--text body-1 px-3">
                         <div class="mb-1">
-                          Fugit nihil corporis rem iste! Doloribus magni
-                          doloremque
+                          Mensaje de notificacion de un solicitante o de administracion
                         </div>
                         <cite class="font-weight-thin"
-                          >- Any Sanders. Sr Marketing Director</cite
+                          >- Any Sanders. Cliente</cite
                         >
                       </blockquote>
                     </v-col>
@@ -121,11 +122,10 @@
                         class="blockquote grey--text body-1 px-3 text-right"
                       >
                         <div class="mb-1">
-                          Fugit nihil corporis rem iste! Doloremque inventore
-                          natus nemo
+                          Mensaje de notificacion de un solicitante o de administracion
                         </div>
                         <cite class="font-weight-thin"
-                          >- Carol Violas. Sales Representative</cite
+                          >- Carol Violas. Gestor de ventas</cite
                         >
                       </blockquote>
                     </v-col>
@@ -144,11 +144,10 @@
                     <v-col cols="10">
                       <blockquote class="blockquote grey--text body-1 px-3">
                         <div class="mb-1">
-                          Fugit nihil corporis rem iste! Doloribus natus
-                          consectetur
+                          Mensaje de notificacion de un solicitante o de administracion
                         </div>
                         <cite class="font-weight-thin"
-                          >- Naomi Malone. Country Director</cite
+                          >- Naomi Malone. Director Administrativo</cite
                         >
                       </blockquote>
                     </v-col>
@@ -174,7 +173,7 @@ export default {
   data() {
     return {
       doughChartData: {
-        labels: ['NuVue', 'VueJit', 'IftShi', 'KoinVi', 'MegsWear', 'Millgh'],
+        labels: ['Credito Poliza Hogar', 'Credito Poliza Vida', 'Credito Poliza Auto', 'Creditos otros', 'Credito  Estudios', 'Creditos Publicos'],
         datasets: [
           {
             label: 'Visualization',
@@ -219,7 +218,7 @@ export default {
         ],
         datasets: [
           {
-            label: 'John Doe',
+            label: 'Mes de Enero',
             backgroundColor: '#ff0099',
             borderColor: '#ff0099',
             borderWidth: '0',
@@ -227,7 +226,7 @@ export default {
             data: [40, 39, 10, 40, 39, 80, 40, 30, 10, 20, 30, 40]
           },
           {
-            label: 'Jane Doe',
+            label: 'Mes de Febrero',
             backgroundColor: '#ff9900',
             borderColor: '#ff9900',
             borderWidth: '0',
@@ -235,7 +234,7 @@ export default {
             data: [20, 9, 80, 90, 29, 58, 80, 20, 30, 40, 55, 75]
           },
           {
-            label: 'Jack Doe',
+            label: 'Mes de Marzo',
             backgroundColor: '#999999',
             borderColor: '#999999',
             borderWidth: '0',

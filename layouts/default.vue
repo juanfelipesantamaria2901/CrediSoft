@@ -91,7 +91,7 @@
       </v-list>
     </v-navigation-drawer>
     <!-- <v-app-bar
-      :clipped-left="clipped" 
+      :clipped-left="clipped"
       elevate-on-scroll -->
     <v-app-bar
       :color="isDark ? 'default' : 'white'"
@@ -243,7 +243,7 @@ export default {
   components: { SeoHead },
   data() {
     return {
-      title: 'Nuxtify',
+      title: 'CrediSoft',
       company: global.company,
       // clipped: false,
       // fixed: false,
@@ -257,23 +257,18 @@ export default {
         },
         {
           icon: 'mdi-chart-bar',
-          title: 'Charts',
+          title: 'Graficos',
           to: '/charts'
         },
         {
           icon: 'mdi-table-large',
-          title: 'Tables',
+          title: 'Tablas',
           to: '/tables'
         },
         {
           icon: 'mdi-message-bulleted',
-          title: 'Forms',
+          title: 'Formulario',
           to: '/forms'
-        },
-        {
-          icon: 'mdi-cards',
-          title: 'Cards',
-          to: '/cards'
         },
         {
           icon: 'mdi-account-card',
@@ -286,55 +281,17 @@ export default {
               to: '/sign-in'
             },
             {
-              icon: 'mdi-account-plus',
-              title: 'Sign Up',
-              to: '/sign-up'
-            },
-            {
               icon: 'mdi-account-key',
-              title: 'Forgot Password',
+              title: 'Contraseña Extraviada',
               to: '/forgot-password'
             }
           ]
         },
         {
           icon: 'mdi-flag',
-          title: 'Filters',
+          title: 'Filtros',
           to: '/filters'
         },
-        {
-          icon: 'mdi-material-ui',
-          title: 'Icons',
-          to: '/icons'
-        },
-        {
-          icon: 'mdi-pencil-box',
-          title: 'Typography',
-          // to: '/typography',
-          to: null,
-          items: [
-            {
-              icon: 'mdi-pencil-lock',
-              title: 'Paragraph',
-              to: '/paragraph'
-            },
-            {
-              icon: 'mdi-pencil',
-              title: 'Headings',
-              to: '/headings'
-            },
-            {
-              icon: 'mdi-grease-pencil',
-              title: 'Typographies',
-              to: '/typography'
-            }
-          ]
-        },
-        {
-          icon: 'mdi-book-multiple',
-          title: 'Landing',
-          to: '/landing'
-        }
       ],
       miniVariant: false,
       right: true,
